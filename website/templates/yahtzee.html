@@ -1,0 +1,51 @@
+{% extends "base.html" %} {% block title %} Yahtzee Probability {% endblock %}
+
+{% block content %} 
+<h1> This is the Yahtzee Page</h1>
+
+
+<!-- How to create logic statements in template  -->
+{% if boolean == True %} Yes, this is true! 
+
+{% else %}
+
+This is false 
+
+{% endif %}
+
+
+
+<form method = "POST">
+    <h3 align="center"> Calculate Probability </h3>"
+    <div class="form-group">
+
+        <label for ="Desired Combination"> What is the desired combination of Dice? </label>
+        <input type ="text" class="form-control" id="Desired Combination" name="Roll Count" placeholder="Fullhouse / 3 of a kind / Large Straight">
+
+
+        <label for ="Roll Count"> Which Roll are you on?</label>
+        <input type ="number" class="form-control" id="Roll Count" name="Roll Count" placeholder="Enter Roll">
+
+        <label for ="Kept Die 1"> What is the value of the 1st Die Kept? </label>
+        <input type ="number" class="form-control" id="Kept Die 1" name="Die 1" placeholder="Enter Die 1">
+
+        <label for ="Kept Die 1"> What is the value of the 2nd Die Kept? </label>
+        <input type ="number" class="form-control" id="Kept Die 2" name="Die 2" placeholder="Enter Die 2">
+
+        <label for ="Kept Die 1"> What is the value of the 3rd Die Kept? </label>
+        <input type ="number" class="form-control" id="Kept Die 3" name="Die 3" placeholder="Enter Die 3">
+
+        <label for ="Kept Die 1"> What is the value of the 4th Die Kept? </label>
+        <input type ="number" class="form-control" id="Kept Die 4" name="Die 4" placeholder="Enter Die 4">
+
+        <label for ="Kept Die 1"> What is the value of the 5th Die Kept? </label>
+        <input type ="number" class="form-control" id="Kept Die 5" name="Die 5" placeholder="Enter Die 5">
+
+    </div>"
+
+    <br />
+    <button type = "submit" class ="btn btn-primary"> Submit </button>
+
+</form>
+
+{% endblock %}
