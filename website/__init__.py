@@ -9,10 +9,15 @@ def create_app():
     app.config['SECRET_KEY'] = 'Last Chance to Evacuate Planet Earth'
 
     from .views import views
-    from .auth import auth 
+    from .aboutMe import aboutMe
+    from .projects import projects
+    from .yahtzee import yahtzee 
+    
 
     app.register_blueprint(views, url_prefix='/')
-    app.register_blueprint(auth, url_prefix='/')
+    app.register_blueprint(aboutMe, url_prefix='/')
+    app.register_blueprint(projects, url_prefix='/')
+    app.register_blueprint(yahtzee, url_prefix='/')
 
 
     

@@ -10,6 +10,4 @@ views = Blueprint('views', __name__)
 def home():
     return render_template("home.html")
 
-@views.route('/yahtzee/')
-def yahtzee():
-    return render_template("yahtzee.html",boolean=True)
+
