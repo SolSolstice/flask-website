@@ -19,31 +19,45 @@ This is false
 !! need to figure out how to not allow negative values !! 
 
 -->
+
 <form method = "POST">
     <h3 align="center"> Calculate Probability </h3>
+    <br>
+    <link rel="stylesheet" href="style.css"/> 
     <div class="form-group">
 
         <label for ="Desired Combination"> What is the desired combination of Dice? </label>
-        <input type ="text" class="form-control" id="Desired Combination" name="Roll Count" placeholder="Fullhouse / 3 of a kind / Large Straight">
+            <select name = "Desired Combination" id="Desired-Combination">
+                <option value="Invalid"> Select a Combination</option>
+                <option value="3 of a Kind">3 of a Kind</option>
+                <option value="4 of a Kind">4 of a Kind</option>
+                <option value="Full House">Full House</option>
+                <option value="Small Straight">Small Straight</option>
+                <option value="Large Straight">Large Straight</option>
+                <option value="Yahtzee">Yahtzee</option>
+            </select>
 
+        <br>
+        <br>
 
         <label for ="Roll Count"> Which Roll are you on?</label>
-        <input type ="number" class="form-control" id="Roll Count" name="Roll Count" placeholder="Enter Roll">
+        <input type ="number" class="form-control" id="Roll-Count" name="Roll Count" placeholder="Enter Roll">
+
 
         <label for ="Kept Die 1"> What is the value of the 1st Die Kept? </label>
-        <input type ="number" class="form-control" id="Kept Die 1" name="Die 1" placeholder="Enter Die 1">
+        <input type ="number" class="form-control" id="Kept-Die1" name="Die 1" placeholder="Enter Die 1">
 
         <label for ="Kept Die 1"> What is the value of the 2nd Die Kept? </label>
-        <input type ="number" class="form-control" id="Kept Die 2" name="Die 2" placeholder="Enter Die 2">
+        <input type ="number" class="form-control" id="Kept-Die2" name="Die 2" placeholder="Enter Die 2">
 
         <label for ="Kept Die 1"> What is the value of the 3rd Die Kept? </label>
-        <input type ="number" class="form-control" id="Kept Die 3" name="Die 3" placeholder="Enter Die 3">
+        <input type ="number" class="form-control" id="Kept-Die3" name="Die 3" placeholder="Enter Die 3">
 
         <label for ="Kept Die 1"> What is the value of the 4th Die Kept? </label>
-        <input type ="number" class="form-control" id="Kept Die 4" name="Die 4" placeholder="Enter Die 4">
+        <input type ="number" class="form-control" id="Kept-Die4" name="Die 4" placeholder="Enter Die 4">
 
         <label for ="Kept Die 1"> What is the value of the 5th Die Kept? </label>
-        <input type ="number" class="form-control" id="Kept Die 5" name="Die 5" placeholder="Enter Die 5">
+        <input type ="number" class="form-control" id="Kept-Die5" name="Die 5" placeholder="Enter Die 5">
 
     </div>
 
@@ -51,5 +65,8 @@ This is false
     <button type = "submit" class ="btn btn-primary"> Submit </button>
 
 </form>
+
+ 
+
 
 {% endblock %}
